@@ -10,12 +10,13 @@ import NotificationList from "./chapter_06/NotificationList";
 import ParentComponent from "./chapter_07/ParentComponent";
 import MeasureExample from "./chapter_07/MeasureExample";
 import Accommodate from "./chapter_07/Accommodate";
+import ConfirmButton from "./chapter_08/ConfirmButton";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-root.render(<Accommodate />);
+root.render(<ConfirmButton />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
