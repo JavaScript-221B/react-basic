@@ -13,6 +13,7 @@ import ConfirmButton from './chapter_08/ConfirmButton';
 import LandingPage from './chapter_09/LandingPage';
 import AttendanceBook from "./chapter_10/AttendanceBook";
 import SignUp from './chapter_11/SighUp';
+import Calculator from './chapter_12/Calculator';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -72,9 +73,16 @@ import SignUp from './chapter_11/SighUp';
 //   document.getElementById('root')
 // );
 
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <SignUp />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
   <React.StrictMode>
-    <SignUp />
+    <Calculator />
   </React.StrictMode>,
   document.getElementById('root')
 );
