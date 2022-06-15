@@ -14,12 +14,13 @@ import ConfirmButton from "./chapter_08/ConfirmButton";
 import Toolbar from "./chapter_09/Toolbar";
 import LandingPage from "./chapter_09/LandingPage";
 import AttendanceBook from "./chapter_10/AttendanceBook";
+import SignUp from "./chapter_11/SignUp";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-root.render(<AttendanceBook />);
+root.render(<SignUp />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
