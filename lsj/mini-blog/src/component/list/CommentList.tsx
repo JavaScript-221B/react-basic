@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CommentListItem from "./CommentListItem";
+import { IComment } from "../../types";
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,13 +15,8 @@ const Wrapper = styled.div`
     }
   }
 `;
-type Comment = {
-  comment: string;
-  content: string;
-  id: number;
-};
 
-type CommentListProps = { comments: Comment[] };
+type CommentListProps = { comments: IComment[] };
 
 function CommentList({ comments }: CommentListProps) {
   return (

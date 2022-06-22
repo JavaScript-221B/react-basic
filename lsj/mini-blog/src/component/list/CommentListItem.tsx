@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { IComment } from "../../types";
 
 const Wrapper = styled.div`
   width: calc(100% - 2rem);
@@ -22,7 +23,7 @@ const ContentText = styled.p`
 `;
 
 type CommentListItemProps = {
-  comment: { content: string };
+  comment: IComment;
 };
 
 function CommentListItem({ comment }: CommentListItemProps) {

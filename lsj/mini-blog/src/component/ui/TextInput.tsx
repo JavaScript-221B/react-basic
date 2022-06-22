@@ -12,7 +12,7 @@ const StyledTextArea = styled.textarea<{ height?: string }>`
 type TextInputProps = {
   height?: string;
   value: string;
-  onChange: () => void;
+  onChange: (event: any) => void;
 };
 
 function TextInput({ height, value, onChange }: TextInputProps) {

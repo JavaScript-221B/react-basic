@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PostListItem from "./PostListItem";
+import { IPost } from "../../types";
 
 const Wrapper = styled.div`
   display: flex;
@@ -15,20 +16,15 @@ const Wrapper = styled.div`
   }
 `;
 
-type Post = {
-  title: string;
-  id: number;
-};
-
 type PostListProps = {
-  posts: Post[];
-  onClickItem: (post: Post) => void;
+  posts: IPost[];
+  onClickItem: (post: IPost) => void;
 };
 
 function PostList({ posts, onClickItem }: PostListProps) {
   return (
     <Wrapper>
-      {posts.map((post, index) => (
+      {posts.map((post) => (
         <PostListItem
           key={post.id}
           post={post}

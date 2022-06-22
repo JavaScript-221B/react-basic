@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { IPost } from "../../types";
 
 const Wrapper = styled.div`
   width: calc(100% - 2rem);
@@ -23,7 +24,7 @@ const TitleText = styled.p`
 `;
 
 type PostListItemProps = {
-  post: { title: string };
+  post: IPost;
   onClick: () => void;
 };
 
